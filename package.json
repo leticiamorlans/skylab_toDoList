@@ -1,0 +1,25 @@
+{
+  "name": "skylab_toDoList",
+  "version": "1.0.0",
+  "description": "## Desc:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leticiamorlans/skylab_toDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leticiamorlans/skylab_toDoList/issues"
+  },
+  "homepage": "https://github.com/leticiamorlans/skylab_toDoList#readme",
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
