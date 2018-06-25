@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/leticiamorlans/skylab_toDoList#readme",
   "devDependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
   }
