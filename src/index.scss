@@ -1,9 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;    
-    div {
-        background-color: tomato;
+    font-family: Arial, Helvetica, sans-serif;          
         .header{
             padding: 5% 5%;  
+            background-color: tomato;
             h1 {
                 color: white;
                 text-align: center;
@@ -20,14 +19,12 @@ body {
                     margin: 0;
                     float: left;
                 }
-                
                 input {    
                     padding: 15px 5px;
                     font-size: 16px;
                     width: 70%;
                     text-align: left;
                 }
-                
                 button {
                     background-color: #e7e7e7; 
                     color: black;
@@ -36,11 +33,13 @@ body {
                     cursor: pointer;
                     width: 28%;
                 }
-
+                button:hover{
+                    background-color: rgb(80, 77, 76);
+                    color: white;
+                }
             }
-
         }
-    }
+    
 
 /* listas */
 
@@ -55,27 +54,8 @@ body {
         li {
             padding: 15px 30px;
             position: relative;
-            /*done es para cuando le das click y ya la marca como hecha*/
-            .done {
-                background-color: gray;
-                color: white;
-                text-decoration: line-through;
-            } 
-            /*para poner el check cuando dan click que ya esta hecho*/
-            .done::before {
-                content: ' ';
-                position: absolute;
-                border-color: #fff;
-                border-style: solid;
-                border-width: 0 2px 2px 0;
-                top: 10px;
-                left: 16px;
-                transform: rotate(45deg);
-                height: 15px;
-                width: 7px;
-            } 
+            
         } 
-        
         li:nth-child(even) {
             background-color: rgb(197, 194, 194);
         }
@@ -83,6 +63,27 @@ body {
         li:hover{
             background-color: rgb(248, 171, 157);
         }
+        /*done es para cuando le das click y ya la marca como hecha*/
+        li.done {
+            background-color: gray;
+            color: white;
+            text-decoration: line-through;
+        } 
+        /*para poner el check cuando dan click que ya esta hecho*/
+        .done::before {
+            content: ' ';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+        } 
+
+        
 
         /*para cuando se crea el botón*/
         .close {
@@ -94,9 +95,19 @@ body {
         }
         
     }
+    @media (max-width: 716px){//mobile
+        input#to-do {    
+            width: 100%;
+        }
+        
+        .header {
+            button.add {
+                width: 100%;
+            }
+        }
+    }
+    
 }
-
-
 
 
 
