@@ -52,7 +52,7 @@ body {
         position: relative;
         
         li {
-            padding: 15px 30px;
+            padding: 15px 15px 15px 35px;
             position: relative;
             
         } 
@@ -86,15 +86,13 @@ body {
         
 
         /*para cuando se crea el botón*/
-        .close {
+        .deleteItem {
             float: right;
+            
+            &:hover{ background-color: tomato; }
         }
-
-        .close:hover{
-            background-color: tomato;
-        }
-        
     }
+
     @media (max-width: 716px){//mobile
         input#to-do {    
             width: 100%;
